@@ -1,3 +1,22 @@
+.section-main-menu-search-obj {
+  width: 100%;
+  input {
+    width: 100%;
+    height: 43px;
+    background: #FFFFFF;
+    border: 2px solid #DDDDDD;
+    box-sizing: border-box;
+  }
+  &::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    margin-left: 20px;
+    background-color: #000;
+  }
+
+}
+
 body {
   input {
     &:active, &:hover, &:focus {
@@ -15,7 +34,6 @@ body {
     margin: 0 auto;
     padding: 0;
     position: relative;
-    height: 800px;
 
     h2 {
       font-size: 18px;
@@ -71,25 +89,39 @@ body {
 .section-main {
   .section-main-txt {
     padding-top: 35%;
+    padding-bottom: 35px;
     margin-left: 5%;
   }
+
   .section-main-menu {
     width: 100%;
 
     .section-main-menu-nav {
+      flex-wrap: wrap;
       display: flex;
-      margin: 41px auto 77px auto;
+      margin: auto;
       width: 1254px;
+      padding-top: 39px;
 
       .section-main-menu-navbar-search-block {
         margin-left: auto;
+        padding-top: 2px;
+
 
         ul {
+          flex-wrap: wrap;
           display: flex;
           justify-content: space-between;
           width: 263px;
 
           .section-main-menu-navbar-search-block-after {
+            &:last-child {
+              &::after {
+                margin-left: 30px;
+              }
+
+            }
+
             &::after {
               content: "";
               position: absolute;
@@ -104,6 +136,8 @@ body {
       }
 
       .section-main-menu-navbar {
+        padding-top: 2px;
+
         ul {
           display: flex;
           justify-content: space-between;
@@ -174,25 +208,20 @@ body {
 
       &:hover {
         color: black;
-
-        &::before {
-          content: "";
-          position: absolute;
-          width: 90px;
-          height: 1px;
-          background-color: #000;
-          margin-top: 22px;
-          margin-left: 0;
-        }
+        padding-bottom: 8px;
+        border-bottom: 1.2px solid #4d4d4d;
+        text-transform: capitalize;
+        position: relative;
       }
     }
   }
 }
 
 .section-analog-txt {
-  padding-top: 9%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   margin: auto;
-  width: 1160px;
+  width: 75%;
   height: 204px;
 
   h1 {
@@ -242,7 +271,7 @@ body {
 
 .section-refillable {
   width: 100%;
-  height: 690px;
+  height: inherit;
   background: #312F2E;
 
   .section-refillable-block {
@@ -250,6 +279,7 @@ body {
     display: flex;
     margin: auto;
     padding-top: 6.5%;
+    padding-bottom: 6.5%;
 
     .section-refillable-txt {
       background-color: #F7F7F7;
@@ -277,6 +307,7 @@ body {
         font-size: 15px;
         line-height: 21px;
         color: #1A1A1A;
+
         &:last-child {
           &::before {
             position: absolute;
@@ -294,7 +325,7 @@ body {
 
 .section-shop {
   margin: auto;
-  width: 1160px;
+  width: 100%;
 
   h1 {
     padding-top: 7px;
@@ -311,7 +342,7 @@ body {
       background-color: #000000;
       width: 100px;
       height: 1px;
-      margin-top: 20px;
+      margin-top: 25px;
     }
   }
 
@@ -342,8 +373,9 @@ body {
 .section-design {
   .section-design-txt {
     padding-top: 12.5%;
+    padding-bottom: 12.5%;
     margin: auto;
-    width: 782px;
+    width: 100%;
 
     h1 {
       font-family: Roboto;
@@ -420,17 +452,18 @@ body {
       font-family: Roboto;
       font-size: 31px;
       border: 1px solid #242424;
-      width: 338px;
+      width: 80%;
       height: 48px;
+      border-right: 1px solid;
     }
 
     .section-input-btn {
       content: "";
-      width: 66px;
+      width: 20%;
       height: 52px;
       border: 1px solid #242424;
       background: #FFFFFF;
-      margin-left: 1px;
+      border-left: 0;
 
       &:hover {
         cursor: pointer;
@@ -441,11 +474,12 @@ body {
 
 .section-footer {
   width: 100%;
-  height: 359px;
+  min-height: 359px;
   background-color: #F7F7F7;
   padding-top: 8%;
 
   .footer {
+    min-height: 359px;
     margin: auto;
     width: 1158px;
     display: flex;
@@ -483,11 +517,14 @@ body {
 
         text-align: right;
       }
+
       .section-footer-images {
         margin-top: 36px;
         margin-left: auto;
+
         img {
           margin-left: 16px;
+
           &:hover {
             cursor: pointer;
           }

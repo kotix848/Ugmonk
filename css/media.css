@@ -1,0 +1,135 @@
+@media (max-width: 1500px) {
+  .section-cart-shop .section-cart-shop-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 55px auto;
+    justify-content: space-around; }
+
+  .section-footer .footer {
+    width: 100%; } }
+@media (max-width: 1250px) {
+
+  .section-shop-men-woomen {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* .section-shop .section-shop-men-woomen {
+ text-align: center;
+ width: 100%;
+ margin: 20px auto;
+ display: inline-block;
+ justify-content: space-between;
+ flex-wrap: wrap;
+} */ }
+
+  .section-main .section-main-menu .section-main-menu-nav {
+    width: 100%;
+    justify-content: space-between; }
+
+  .section-analog-txt {
+    width: 75%; }
+    .section-analog-txt h1 {
+      font-size: 29px;
+      line-height: 45px; }
+    .section-analog-txt .section-analog-btn {
+      width: 152px; }
+    .section-analog-txt .section-analog-link {
+      font-size: 13px; }
+
+  .section-refillable .section-refillable-block {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding-top: 4.5%;
+    padding-bottom: 4.5%;
+    flex-wrap: wrap; }
+
+  .section-refillable .section-refillable-block .section-refillable-txt {
+    min-width: 660px;
+    margin-bottom: 40px; }
+
+  .section-design .section-design-txt h1 {
+    font-size: 24px;
+    line-height: 30px; } }
+@media (max-width: 745px) {
+  .section-main .section-main-menu .section-main-menu-nav .section-main-menu-navbar-search-block {
+    display: none; }
+
+  body .inner-image h2 {
+    font-size: 20px; }
+
+  body .inner-image h3 {
+    font-size: 14px; }
+    body .inner-image h3::before {
+      text-align: center;
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 1px;
+      background-color: #fff;
+      margin-top: 18px; }
+
+  .section-cart-shop .section-cart-shop-list {
+    width: 200px;
+    padding-top: 10px;
+    flex-direction: column;
+    margin: auto;
+    text-align: center; }
+    .section-cart-shop .section-cart-shop-list .section-cart-shop-link {
+      padding-top: 10px; }
+
+  .section-footer .section-footer-right .section-footer-logo {
+    text-align: left; }
+
+  .section-footer .section-footer-right .section-footer-logo .section-footer-images {
+    margin-top: 10px;
+    width: 146px; }
+
+  .section-footer .section-footer-right .section-footer-logo .section-footer-txt {
+    text-align: left; }
+
+  .section-footer .footer {
+    width: 100%;
+    height: 359px;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .section-footer .footer .section-footer-left {
+      margin: auto; }
+    .section-footer .footer .section-footer-right {
+      padding-top: 10px;
+      margin: auto; }
+      .section-footer .footer .section-footer-right .section-footer-left {
+        text-align: left; }
+
+  .section-input .section-input-txt .section-input-input-block {
+    width: 300px; } }
+@media (max-width: 510px) {
+  .section-analog-txt {
+    width: 75%; }
+    .section-analog-txt h1 {
+      font-size: 20px;
+      line-height: 35px; }
+
+  .section-refillable .section-refillable-block {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding-top: 4.5%;
+    padding-bottom: 4.5%;
+    flex-wrap: wrap; }
+    .section-refillable .section-refillable-block img {
+      width: 100%; }
+
+  .section-refillable .section-refillable-block .section-refillable-txt {
+    min-width: 660px;
+    margin-bottom: 40px; } }
+@media (max-width: 368px) {
+  .section-txt {
+    width: 100%; }
+
+  .section-design .section-design-txt h1 {
+    font-size: 16px;
+    line-height: 20px; } }
