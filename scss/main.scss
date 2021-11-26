@@ -1,15 +1,16 @@
-.section-main-menu-search-obj {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input {
+  margin-top: 5px;
   width: 100%;
-
-  input {
-    width: 100%;
-    height: 43px;
-    background: #FFFFFF;
-    border: 2px solid #DDDDDD;
-    outline: 10px solid #fff;
-    box-sizing: border-box;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  }
+  height: 43px;
+  background: #FFFFFF;
+  border: 2px solid #DDDDDD;
+  outline: 10px solid #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -107,7 +108,7 @@ body {
           .section-main-menu-navbar-search-block-after {
             &:last-child {
               &::after {
-                margin-left: 30px;
+                margin-left: 20px;
               }
 
             }
@@ -152,6 +153,12 @@ body {
     font-weight: 300;
     font-size: 20px;
     text-align: center;
+    &:hover {
+      color: #000;
+      background-color: #fff;
+      border: 1px solid #000;
+      line-height: 54px;
+    }
   }
 
   .section-cart-shop-cards {
