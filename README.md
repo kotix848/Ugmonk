@@ -1,2 +1,2 @@
-# это просто пиздец
-да
+# Ugmonk
+Ugmonk - my first good project
